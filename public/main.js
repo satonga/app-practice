@@ -1,5 +1,5 @@
 // Functions
 
-const click = () => {
+const giveAlert = () => {
     alert('Oops Too Late.')
 }
