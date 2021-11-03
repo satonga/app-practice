@@ -7,12 +7,17 @@ body {
     text-align: center
 }
 
-#buy {
-    size-adjust: 50px;
-    margin-left: auto;
-    margin-right: auto;
+.puppy {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
-img:hover {
+.top:hover .puppy {
     opacity: 0.3;
+}
+
+.top:hover .buy {
+    opacity: 1;
 }
