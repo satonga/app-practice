@@ -14,6 +14,17 @@ body {
     backface-visibility: hidden;
 }
 
+.buy {
+    size-adjust: 50px;
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
 .top:hover .puppy {
     opacity: 0.3;
 }
