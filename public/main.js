@@ -1,5 +1,5 @@
 // Functions
 
 const click = () => {
-    return ('Oops Too Late.')
+    alert('Oops Too Late.')
 }
