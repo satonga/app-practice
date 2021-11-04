@@ -1,5 +1,5 @@
 // Functions
 
 const giveAlert = () => {
-    alert('Oops Too Late.')
+    alert('Fill out the information')
 }
