@@ -10,11 +10,12 @@ var rollbar = new Rollbar({
 })
 
 // record a generic message and send it to Rollbar
-rollbar.log('Hello world!')
+// rollbar.log('Hello world!')
 
 const app = express()
 
 app.get('/', (req, res) => {
+    rollbar.info('Someone has visited the puppy page')
     res.sendFile(path.join(__dirname, '../index.html'))
 })
 
