@@ -13,24 +13,24 @@
         <img class="puppy" src="https://www.cheatsheet.com/wp-content/uploads/2017/10/chow-chow-puppy.jpg" alt="Well looks like you die anyways.">
         <div class="bottom">
             <a href="https://devops-found-11.herokuapp.com/">
-                <button class="buy" onclick=giveAlert()>BUY!</button>
+                <button class="buy" onclick='giveAlert()'>BUY!</button>
             </a>
         </div>
     </div>
     <script src="main.js"></script>
     <script>
         const Rollbar = require('rollbar')
-const rollbar = new Rollbar({
-  accessToken: 'f91cd18521d94e419a6cb0f0116ec1b5',
-  captureUncaught: true,
-  captureUnhandledRejections: true,
-})
+        const rollbar = new Rollbar({
+            accessToken: 'f91cd18521d94e419a6cb0f0116ec1b5',
+            captureUncaught: true,
+            captureUnhandledRejections: true,
+        })
 
 
-function giveAlert() {
-    rollbar.info('User clicked on information link')
-    alert('Fill out the information on the following page for the puppy!')
-}
+        function giveAlert() {
+            rollbar.info('User clicked on information link')
+            alert('Fill out the information on the following page for the puppy!')
+        }
     </script>
 </body>
 </html>
